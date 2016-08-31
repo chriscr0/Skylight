@@ -1,0 +1,32 @@
+{
+	"name": "Skylight New Tab",
+	"description": "A new tab page that keeps things beautifly simple.",
+	"version": "1.0.0",
+	"manifest_version": 2,
+	"incognito": "split",
+	"chrome_url_overrides": {
+		"newtab": "skylight_nt.html"
+	},
+	"icons": {
+		"128": "resources/icon-128.png",
+		"64": "resources/icon-64.png",
+		"32": "resources/icon-32.png",
+		"16": "resources/icon-16.png"
+	},
+	 "background": {
+		"persistent": false,
+		"scripts": ["scripts/jquery-3.1.0.min.js", "scripts/background.js"]
+	},
+	"content_scripts": [{
+		"js": ["scripts/jquery-3.1.0.min.js", "scripts/skylight_nt.js"],
+		"matches": ["http://*/*", "https://*/*"]
+	}],
+	"permissions": [
+		"topSites",
+		"storage"
+	],
+	"web_accessible_resources": [
+		"css/w3.css",
+		"css/skylight_nt.css"
+	]
+}
