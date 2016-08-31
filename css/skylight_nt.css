@@ -19,6 +19,7 @@ a:link {
 	position: fixed;
 	margin-left: -309px;
 	transition: margin-left .5s;
+	overflow-y: scroll;
 }
 .sidebar:hover {
 	margin-left: 0px;
@@ -43,4 +44,7 @@ a:link {
 	height: 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+.sidebar::-webkit-scrollbar { 
+	display: none; 
 }
