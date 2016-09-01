@@ -1,4 +1,7 @@
 # Skylight
+
+![Skylight Screenshot](full-expanded.png)
+
 A chome extension that replaces the new tab page with an uncluttered UI and beautiful wallpapers. Every new tab displays one of over 700 different wallpapers.
 
 **Get it here:** (Chrome Store link coming soon)
